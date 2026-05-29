@@ -1,0 +1,4 @@
+# Kun præsentationen trackes — kildedokumenter holdes ude (fortroligt kundemateriale)
+*
+!.gitignore
+!index.html
