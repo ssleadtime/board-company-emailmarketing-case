@@ -147,9 +147,9 @@
         background:linear-gradient(90deg,var(--navy),#3c4a60);transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.7,.2,1);box-shadow:var(--shadow-sm);}
   .fbar .fval{font-family:'Work Sans',sans-serif;font-size:22px;}
   .frow:nth-child(1) .fbar{width:100%}
-  .frow:nth-child(2) .fbar{width:62%;background:linear-gradient(90deg,#3c4a60,#586a85)}
-  .frow:nth-child(3) .fbar{width:78%;background:linear-gradient(90deg,#586a85,var(--gold))}
-  .frow:nth-child(4) .fbar{width:92%;background:linear-gradient(90deg,var(--gold),var(--coral))}
+  .frow:nth-child(2) .fbar{width:54%;background:linear-gradient(90deg,#3c4a60,#586a85)}
+  .frow:nth-child(3) .fbar{width:38%;background:linear-gradient(90deg,#586a85,var(--gold))}
+  .frow:nth-child(4) .fbar{width:80%;background:linear-gradient(90deg,var(--gold),var(--coral))}
   .funnel.in .fbar{transform:scaleX(1);}
   .funnel.in .frow:nth-child(2) .fbar{transition-delay:.15s}
   .funnel.in .frow:nth-child(3) .fbar{transition-delay:.3s}
@@ -229,7 +229,16 @@
   .roi-card.rev .rv{color:var(--money);}
   .roi-card.net .rv{color:var(--money);}
   .roi-card .rs{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px;}
-  .roi-foot{margin-top:32px;font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;max-width:760px;}
+  .roi-foot{margin-top:24px;font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;max-width:760px;}
+  .roi-years{display:flex;flex-direction:column;gap:28px;}
+  .roi-year-h{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;}
+  .roi-year-h .yr{font-family:'Work Sans',sans-serif;font-weight:700;font-size:20px;color:#fff;letter-spacing:-.01em;}
+  .roi-year-h .yd{font-size:13px;color:rgba(255,255,255,.55);font-weight:500;}
+  .li-note{margin-top:28px;display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-left:4px solid var(--coral);border-radius:14px;padding:20px 24px;}
+  .li-note .li-ico{flex:none;width:38px;height:38px;border-radius:9px;background:#0A66C2;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;}
+  .li-note b{color:#fff;display:block;margin-bottom:3px;font-size:15px;}
+  .li-note span{color:rgba(255,255,255,.72);font-size:14px;line-height:1.5;}
+  .li-note em{color:var(--gold);font-style:normal;font-weight:600;}
   @media(max-width:780px){.roi-grid{grid-template-columns:1fr}}
 
   /* timeline placeholder */
@@ -352,12 +361,12 @@
   <div class="wrap hero-inner">
     <div class="eyebrow reveal in"><span class="ln"></span> Business Case · Email Marketing · Maj 2026</div>
     <h1 class="hero-title serif reveal in d1">Varme leads, der<br>i dag bliver <span class="accent">kolde</span>.</h1>
-    <p class="hero-sub reveal in d2">Board Companys sælgere skaber 600 nye leads om ugen. De fleste er ikke klar til at købe endnu — og i dag sker der ingenting med dem i op til et år. Email-marketing griber dem, før konkurrenten gør.</p>
+    <p class="hero-sub reveal in d2">Board Companys salgsteam er i dialog med ca. 600 potentielle kunder hver uge — ud af en pipeline på over 31.000 leads om måneden. De fleste er ikke klar til at købe endnu, og i dag sker der ingenting med dem i op til et år. Email-marketing griber dem, før konkurrenten gør.</p>
     <p class="hero-tagline serif reveal in d2" style="font-style:italic">Hvad koster det. Hvad giver det. Hvornår.</p>
 
     <div class="hero-meta reveal in d3">
       <div class="item"><div class="k">Udarbejdet af</div><div class="v">Leadtime ApS</div></div>
-      <div class="item"><div class="k">Til</div><div class="v">Board Company DK</div></div>
+      <div class="item"><div class="k">Til</div><div class="v">Board Company</div></div>
       <div class="item"><div class="k">Disciplin</div><div class="v">Email & Marketing Automation</div></div>
     </div>
 
@@ -374,24 +383,24 @@
 <section id="udgangspunkt">
   <div class="wrap">
     <div class="sec-tag reveal"><span class="num">01</span> · Udgangspunktet</div>
-    <h2 class="sec-title serif reveal">En sælgermaskine, der allerede skaber efterspørgsel.</h2>
-    <p class="sec-lead reveal">Board Companys sælgere er i dialog med mange potentielle kunder hver uge. Råstoffet er der allerede — det bliver bare ikke aktiveret, når leadet ikke er klar med det samme.</p>
+    <h2 class="sec-title serif reveal">En salgsmaskine, der allerede skaber efterspørgsel.</h2>
+    <p class="sec-lead reveal">Board Companys sælgere arbejder med et stort antal leads hver uge og er i dialog med en del af dem. Råstoffet er der allerede — det bliver bare ikke aktiveret, når leadet ikke er klar med det samme.</p>
 
     <div class="stats">
       <div class="stat reveal d1">
         <div class="big"><span data-count="30">0</span></div>
-        <div class="lbl">Sælgere i Board Company DK</div>
+        <div class="lbl">Sælgere på tværs af markeder</div>
         <div class="sub">Hver med deres egen pipeline af leads</div>
       </div>
       <div class="stat reveal d2">
-        <div class="big"><span data-count="20">0</span><span class="suf">+</span></div>
-        <div class="lbl">Leads pr. sælger / uge</div>
-        <div class="sub">Bekræftet af sælgerne selv</div>
+        <div class="big"><span data-count="260">0</span></div>
+        <div class="lbl">Leads pr. sælger om ugen</div>
+        <div class="sub">Samlet kontaktvolumen i pipelinen</div>
       </div>
       <div class="stat reveal d3">
         <div class="big"><span data-count="600">0</span></div>
-        <div class="lbl">Nye leads om ugen</div>
-        <div class="sub">På tværs af hele teamet</div>
+        <div class="lbl">Dialoger om ugen</div>
+        <div class="sub">Dem teamet rent faktisk taler med</div>
       </div>
     </div>
 
@@ -399,7 +408,7 @@
       <div class="pcard bad reveal d1">
         <div class="ico">⏳</div>
         <h3>I dag: stilhed i op til et år</h3>
-        <p>De fleste leads er interesserede, men ikke klar til at købe endnu. Indtil de er det, sker der ingenting — og i den periode kan en konkurrent nå at lægge billet ind.</p>
+        <p>De fleste, sælgerne taler med, er interesserede, men ikke klar til at købe endnu. Indtil de er det, sker der ingenting — og i den periode kan en konkurrent nå at lægge billet ind.</p>
       </div>
       <div class="pcard good reveal d2">
         <div class="ico">✦</div>
@@ -414,24 +423,24 @@
 <section id="pipeline" class="alt">
   <div class="wrap">
     <div class="sec-tag reveal"><span class="num">02</span> · Potentialet</div>
-    <h2 class="sec-title serif reveal">Fra leads til en nyhedsbrevsliste, der vokser hver uge.</h2>
-    <p class="sec-lead reveal">Baseret på tal fra sælgerne vurderer vi, at <b>30%</b> af de leads, der er i dialog med, vil sige ja til at modtage nyhedsbrevet. Det giver en liste, der bygger sig selv op — uge for uge.</p>
+    <h2 class="sec-title serif reveal">Fra leads til en nyhedsbrevsliste, der vokser hver måned.</h2>
+    <p class="sec-lead reveal">Sælgerne arbejder med titusindvis af leads om måneden og er i dialog med en del af dem. Vi vurderer, at <b>30%</b> af de dialoger ender med et ja til nyhedsbrevet. Det giver en liste, der bygger sig selv op — måned for måned.</p>
 
     <div class="funnel" id="funnel">
       <div class="frow reveal">
-        <div class="flabel"><div class="t">Leads pr. uge</div><div class="s">30 sælgere × 20 leads</div></div>
-        <div class="fbar-track"><div class="fbar"><span class="fval">600</span></div></div>
+        <div class="flabel"><div class="t">Leads i alt</div><div class="s">30 sælgere × 260/uge × 4 uger</div></div>
+        <div class="fbar-track"><div class="fbar"><span class="fval">31.200</span>&nbsp;/ md.</div></div>
       </div>
       <div class="frow reveal d1">
-        <div class="flabel"><div class="t">Sign ups til nyhedsbrev</div><div class="s">30% siger ja til at modtage</div></div>
-        <div class="fbar-track"><div class="fbar"><span class="fval">180</span>&nbsp;/ uge</div></div>
+        <div class="flabel"><div class="t">Dialoger</div><div class="s">ca. 8% kommer i dialog (≈600/uge)</div></div>
+        <div class="fbar-track"><div class="fbar"><span class="fval">~2.400</span>&nbsp;/ md.</div></div>
       </div>
       <div class="frow reveal d2">
-        <div class="flabel"><div class="t">Pr. måned</div><div class="s">nye tilmeldte</div></div>
+        <div class="flabel"><div class="t">Tilmeldte til nyhedsbrev</div><div class="s">30% af dialoger siger ja</div></div>
         <div class="fbar-track"><div class="fbar"><span class="fval">~720</span>&nbsp;/ md.</div></div>
       </div>
       <div class="frow reveal d3">
-        <div class="flabel"><div class="t">Pr. år</div><div class="s">samlet liste</div></div>
+        <div class="flabel"><div class="t">På et år</div><div class="s">samlet nyhedsbrevsliste</div></div>
         <div class="fbar-track"><div class="fbar"><span class="fval">8.600–10.000</span></div></div>
       </div>
     </div>
@@ -449,23 +458,41 @@
   <div class="wrap">
     <div class="sec-tag reveal"><span class="num">03</span> · Interaktiv beregner</div>
     <h2 class="sec-title serif reveal">Træk i knapperne — og se hvad det bliver til.</h2>
-    <p class="sec-lead reveal">Justér listestørrelse, konverteringsrate og pris pr. salg. Tallene genberegnes live. Uddannelsesprisen er sat til 30.000 kr. pr. tilmelding som udgangspunkt.</p>
+    <p class="sec-lead reveal">Justér hele kæden — fra antal sælgere og leads til, hvor mange der kommer i dialog, tilmelder sig og køber. Tallene genberegnes live. Uddannelsesprisen er sat til 30.000 kr. pr. salg som udgangspunkt.</p>
 
     <div class="calc reveal d1">
       <div class="calc-controls">
         <h3 class="serif">Dine forudsætninger</h3>
-        <p class="hint">Standardværdier følger casens realistiske scenarie.</p>
+        <p class="hint">Hele kæden fra leads til omsætning. Standardværdier følger casens realistiske scenarie.</p>
 
         <div class="ctrl">
-          <div class="crow"><label>Antal tilmeldte</label><span class="cval"><span id="v-list">10.000</span></span></div>
-          <input type="range" id="r-list" min="8600" max="10000" step="100" value="10000">
-          <div class="ticks"><span>8.600</span><span>10.000</span></div>
+          <div class="crow"><label>Antal sælgere</label><span class="cval"><span id="v-sellers">30</span></span></div>
+          <input type="range" id="r-sellers" min="5" max="60" step="1" value="30">
+          <div class="ticks"><span>5</span><span>60</span></div>
         </div>
 
         <div class="ctrl">
-          <div class="crow"><label>Konverteringsrate</label><span class="cval"><span id="v-rate">0,25</span>%</span></div>
-          <input type="range" id="r-rate" min="0.10" max="1.00" step="0.05" value="0.25">
-          <div class="ticks"><span>0,10%</span><span>1,00%</span></div>
+          <div class="crow"><label>Leads pr. sælger / uge</label><span class="cval"><span id="v-leads">260</span></span></div>
+          <input type="range" id="r-leads" min="50" max="400" step="10" value="260">
+          <div class="ticks"><span>50</span><span>400</span></div>
+        </div>
+
+        <div class="ctrl">
+          <div class="crow"><label>Andel der kommer i dialog</label><span class="cval"><span id="v-dialog">8</span>%</span></div>
+          <input type="range" id="r-dialog" min="2" max="25" step="0.5" value="8">
+          <div class="ticks"><span>2%</span><span>25%</span></div>
+        </div>
+
+        <div class="ctrl">
+          <div class="crow"><label>Tilmelder sig nyhedsbrev</label><span class="cval"><span id="v-news">30</span>%</span></div>
+          <input type="range" id="r-news" min="5" max="60" step="1" value="30">
+          <div class="ticks"><span>5%</span><span>60%</span></div>
+        </div>
+
+        <div class="ctrl">
+          <div class="crow"><label>Salg-konvertering (af liste/år)</label><span class="cval"><span id="v-rate">0,25</span>%</span></div>
+          <input type="range" id="r-rate" min="0.10" max="2.00" step="0.05" value="0.25">
+          <div class="ticks"><span>0,10%</span><span>2,00%</span></div>
           <div class="presets" id="presets">
             <div class="preset active" data-rate="0.25">Realistisk<small>0,25%</small></div>
             <div class="preset" data-rate="0.5">Optimistisk<small>0,5%</small></div>
@@ -482,20 +509,22 @@
 
       <div class="calc-result">
         <div class="rl">
-          <div class="rk">Estimeret omsætning · år 1</div>
+          <div class="rk">Estimeret omsætning · årligt niveau</div>
           <div class="res-rev"><span id="o-rev">750.000</span> <span class="kr">kr.</span></div>
 
           <div class="res-mini">
-            <div class="rmini"><div class="v" id="o-salg">25</div><div class="l">salg om året</div></div>
-            <div class="rmini"><div class="v" id="o-mdr">~2</div><div class="l">salg om måneden</div></div>
+            <div class="rmini"><div class="v" id="o-leads">7.800</div><div class="l">leads om ugen</div></div>
+            <div class="rmini"><div class="v" id="o-dialog">~624</div><div class="l">dialoger om ugen</div></div>
+            <div class="rmini"><div class="v" id="o-list">~9.000</div><div class="l">tilmeldte om året</div></div>
+            <div class="rmini"><div class="v" id="o-salg">~22</div><div class="l">salg om året</div></div>
           </div>
 
           <div class="res-bar-wrap">
-            <div class="res-bar-lbl"><span>Nettoafkast efter Leadtimes honorar</span><span id="o-net">+420.000 kr.</span></div>
+            <div class="res-bar-lbl"><span>Nettoafkast efter Leadtimes honorar (år 1)</span><span id="o-net">+420.000 kr.</span></div>
             <div class="res-bar"><i id="o-bar"></i></div>
           </div>
 
-          <p class="res-note">Beregnet som tilmeldte × konverteringsrate × pris pr. salg. Nettoafkast = omsætning − estimeret udgift på ca. 330.000 kr. (år 1). Tallene er estimater til beslutningsgrundlag.</p>
+          <p class="res-note">Kæde: sælgere × leads/uge × andel i dialog × andel der tilmelder sig × 48 uger = årlig liste. Liste × salg-konvertering × pris = omsætning. Nettoafkast (år 1) = omsætning − ca. 330.000 kr. Estimater til beslutningsgrundlag.</p>
         </div>
       </div>
     </div>
@@ -507,7 +536,7 @@
   <div class="wrap">
     <div class="sec-tag reveal"><span class="num">04</span> · Scenariemodel</div>
     <h2 class="sec-title serif reveal">Tre scenarier — alle drevet af leads, der allerede er i pipeline.</h2>
-    <p class="sec-lead reveal">Med en liste på 8.600–10.000 tilmeldte og en pris på 30.000 kr. pr. tilmelding ser afkastet sådan ud. Selv det konservative scenarie betyder ca. 2 ekstra salg om måneden — uden ekstra annoncering.</p>
+    <p class="sec-lead reveal">Med en liste på 8.600–10.000 tilmeldte og en pris på 30.000 kr. pr. salg ser afkastet sådan ud. Selv det konservative scenarie betyder ca. 2 ekstra salg om måneden — uden ekstra annoncering.</p>
 
     <div class="scen">
       <div class="scard reveal d1">
@@ -540,51 +569,85 @@
   <div class="hero-glow g" style="opacity:.18;left:-100px;top:40px"></div>
   <div class="wrap" style="position:relative;z-index:1">
     <div class="sec-tag reveal" style="color:var(--gold)"><span class="num" style="color:var(--coral)">05</span> · Hvad koster det — og hvad får vi ud af det?</div>
-    <h2 class="sec-title serif reveal">Udgift op mod omsætning. År 1.</h2>
-    <p class="sec-lead reveal">Timesatsen er sat til 1.000 kr./time. Opstart fylder mest de første måneder, hvorefter det går over i lettere drift. Vælg et scenarie og se regnestykket.</p>
+    <h2 class="sec-title serif reveal">Udgift op mod omsætning — år 1 og år 2.</h2>
+    <p class="sec-lead reveal">Timesatsen er sat til 1.000 kr./time. År 1 bærer opstarten; år 2 er ren drift, hvor en kumulativ liste for alvor arbejder for jer. Vælg et scenarie og se regnestykket.</p>
 
     <div class="roi-toggle reveal" id="roiToggle">
       <button class="active" data-s="real">Realistisk · 0,25%</button>
       <button data-s="opt">Optimistisk · 0,5%</button>
     </div>
 
-    <div class="roi-grid reveal d1">
-      <div class="roi-card cost">
-        <div class="rk">Estimeret udgift</div>
-        <div class="rv">~330.000 <span style="font-size:20px">kr.</span></div>
-        <div class="rs">330 timer × 1.000 kr. (3 mdr. á 35 t + 9 mdr. á 25 t)</div>
+    <div class="roi-years reveal d1">
+      <div class="roi-year">
+        <div class="roi-year-h"><span class="yr">År 1</span><span class="yd">Opstart + drift</span></div>
+        <div class="roi-grid">
+          <div class="roi-card cost">
+            <div class="rk">Estimeret udgift</div>
+            <div class="rv">~330.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs">330 t × 1.000 kr. (3 mdr. á 35 t + 9 mdr. á 25 t)</div>
+          </div>
+          <div class="roi-card rev">
+            <div class="rk">Estimeret omsætning</div>
+            <div class="rv" id="r1-rev">~750.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs" id="r1-revsub">~25 salg × 30.000 kr.</div>
+          </div>
+          <div class="roi-card net">
+            <div class="rk">Nettoafkast</div>
+            <div class="rv" id="r1-net">~420.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs">Omsætning − udgift</div>
+          </div>
+        </div>
       </div>
-      <div class="roi-card rev">
-        <div class="rk">Estimeret omsætning</div>
-        <div class="rv" id="roi-rev">~750.000 <span style="font-size:20px">kr.</span></div>
-        <div class="rs" id="roi-rev-sub">~25 salg × 30.000 kr.</div>
-      </div>
-      <div class="roi-card net">
-        <div class="rk">Nettoafkast · år 1</div>
-        <div class="rv" id="roi-net">~420.000 <span style="font-size:20px">kr.</span></div>
-        <div class="rs" id="roi-net-sub">Omsætning − udgift</div>
+
+      <div class="roi-year">
+        <div class="roi-year-h"><span class="yr">År 2</span><span class="yd">Ren drift · kumulativ liste (~20.000 tilmeldte)</span></div>
+        <div class="roi-grid">
+          <div class="roi-card cost">
+            <div class="rk">Estimeret udgift</div>
+            <div class="rv">~300.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs">12 mdr. á 25 t × 1.000 kr. — ingen opstart</div>
+          </div>
+          <div class="roi-card rev">
+            <div class="rk">Estimeret omsætning</div>
+            <div class="rv" id="r2-rev">~1.500.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs" id="r2-revsub">~50 salg × 30.000 kr. · liste ~20.000</div>
+          </div>
+          <div class="roi-card net">
+            <div class="rk">Nettoafkast</div>
+            <div class="rv" id="r2-net">~1.200.000 <span style="font-size:20px">kr.</span></div>
+            <div class="rs">Omsætning − udgift</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="effort reveal d2" style="margin-top:24px">
+    <div class="effort reveal d2" style="margin-top:30px">
       <div class="ecard" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)">
         <div class="ph">Måned 1–3 · opstart</div>
         <div class="hrs" style="color:var(--gold)">30–40 <small style="color:rgba(255,255,255,.55)">t/md.</small></div>
         <p style="color:rgba(255,255,255,.6)">Opsætning, flows og nyhedsbrev-kickstart</p>
       </div>
       <div class="ecard" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)">
-        <div class="ph">Måned 4+ · drift</div>
+        <div class="ph">Måned 4–12 · drift</div>
         <div class="hrs" style="color:var(--gold)">20–30 <small style="color:rgba(255,255,255,.55)">t/md.</small></div>
         <p style="color:rgba(255,255,255,.6)">Løbende drift, indhold og optimering</p>
       </div>
       <div class="ecard" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)">
-        <div class="ph">LinkedIn · tilvalg</div>
-        <div class="hrs" style="color:var(--gold)">5–6 <small style="color:rgba(255,255,255,.55)">t/md.</small></div>
-        <p style="color:rgba(255,255,255,.6)">Opslag der følger nyhedsbrevets emner</p>
+        <div class="ph">År 2 · ren drift</div>
+        <div class="hrs" style="color:var(--gold)">~25 <small style="color:rgba(255,255,255,.55)">t/md.</small></div>
+        <p style="color:rgba(255,255,255,.6)">Listen arbejder for jer — ingen opstart</p>
       </div>
     </div>
 
-    <p class="roi-foot reveal">Timesatsen bekræftes inden aftaleindgåelse. LinkedIn-timer er ikke medregnet i udgiften, da det er et tilvalg. Udgiften er den samme på tværs af scenarier — det er omsætningen, der skalerer.</p>
+    <div class="li-note reveal">
+      <div class="li-ico">in</div>
+      <div>
+        <b>Organisk LinkedIn — i en case for sig.</b>
+        <span>LinkedIn vurderes på sit eget afkast, ikke kun som en udgift. Vi laver en selvstændig LinkedIn-case, som vi linker til herfra. <em>Kommer.</em></span>
+      </div>
+    </div>
+
+    <p class="roi-foot reveal">Timesatsen (1.000 kr./time) bekræftes inden aftaleindgåelse. År 2 forudsætter en kumulativ liste (år 1-tilmeldte + nye i år 2, ca. 20.000) og kun løbende drift. Estimater til beslutningsgrundlag.</p>
   </div>
 </section>
 
@@ -728,52 +791,64 @@
   const cio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){animCount(e.target);cio.unobserve(e.target);}});},{threshold:.5});
   document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
 
-  // ---- calculator ----
-  const COST=330000;
-  const rList=document.getElementById('r-list'),rRate=document.getElementById('r-rate'),rPrice=document.getElementById('r-price');
-  const vList=document.getElementById('v-list'),vRate=document.getElementById('v-rate'),vPrice=document.getElementById('v-price');
-  const oRev=document.getElementById('o-rev'),oSalg=document.getElementById('o-salg'),oMdr=document.getElementById('o-mdr'),oNet=document.getElementById('o-net'),oBar=document.getElementById('o-bar');
+  // ---- calculator (fuld kæde) ----
+  const COST=330000, WEEKS=48; // 4 uger × 12 mdr
+  const $=id=>document.getElementById(id);
+  const rSellers=$('r-sellers'),rLeads=$('r-leads'),rDialog=$('r-dialog'),rNews=$('r-news'),rRate=$('r-rate'),rPrice=$('r-price');
+  const vSellers=$('v-sellers'),vLeads=$('v-leads'),vDialog=$('v-dialog'),vNews=$('v-news'),vRate=$('v-rate'),vPrice=$('v-price');
+  const oRev=$('o-rev'),oLeads=$('o-leads'),oDialog=$('o-dialog'),oList=$('o-list'),oSalg=$('o-salg'),oNet=$('o-net'),oBar=$('o-bar');
   const presets=document.querySelectorAll('#presets .preset');
   const fmt=n=>Math.round(n).toLocaleString('da-DK');
+  const fmt1=n=>(Math.round(n*10)/10).toLocaleString('da-DK');
   const fmtRate=n=>n.toFixed(2).replace('.',',');
 
   function calc(){
-    const list=+rList.value, rate=+rRate.value, price=+rPrice.value;
-    const salg=list*(rate/100);
-    const rev=salg*price;
+    const sellers=+rSellers.value, leads=+rLeads.value, dialog=+rDialog.value, news=+rNews.value, rate=+rRate.value, price=+rPrice.value;
+    const leadsUge=sellers*leads;
+    const dialogerUge=leadsUge*(dialog/100);
+    const tilmeldteUge=dialogerUge*(news/100);
+    const listeAar=tilmeldteUge*WEEKS;
+    const salgAar=listeAar*(rate/100);
+    const rev=salgAar*price;
     const net=rev-COST;
-    vList.textContent=fmt(list);
+    // slider-værdier
+    vSellers.textContent=fmt(sellers);
+    vLeads.textContent=fmt(leads);
+    vDialog.textContent=fmt1(dialog);
+    vNews.textContent=fmt(news);
     vRate.textContent=fmtRate(rate);
     vPrice.textContent=fmt(price);
+    // resultater
     oRev.textContent=fmt(rev);
-    oSalg.textContent=fmt(salg);
-    oMdr.textContent='~'+Math.round(salg/12);
+    oLeads.textContent=fmt(leadsUge);
+    oDialog.textContent='~'+fmt(dialogerUge);
+    oList.textContent='~'+fmt(listeAar);
+    oSalg.textContent='~'+fmt(salgAar);
     oNet.textContent=(net>=0?'+':'')+fmt(net)+' kr.';
     oNet.style.color=net>=0?'#5FD3A0':'#ff9b9b';
-    // bar relative to 3M ceiling
-    oBar.style.width=Math.max(4,Math.min(100,(rev/3000000)*100))+'%';
-    // sync preset active state
+    oBar.style.width=Math.max(4,Math.min(100,(rev/4000000)*100))+'%';
     presets.forEach(p=>p.classList.toggle('active',Math.abs(+p.dataset.rate-rate)<0.001));
   }
-  [rList,rRate,rPrice].forEach(r=>r.addEventListener('input',calc));
+  [rSellers,rLeads,rDialog,rNews,rRate,rPrice].forEach(r=>r.addEventListener('input',calc));
   presets.forEach(p=>p.addEventListener('click',()=>{rRate.value=p.dataset.rate;calc();}));
   calc();
 
-  // ---- ROI toggle ----
+  // ---- ROI toggle (år 1 + år 2) ----
   const roiData={
-    real:{rev:'~750.000',revSub:'~25 salg × 30.000 kr.',net:'~420.000',netSub:'750.000 − 330.000 kr.'},
-    opt:{rev:'~1.500.000',revSub:'~50 salg × 30.000 kr.',net:'~1.170.000',netSub:'1.500.000 − 330.000 kr.'}
+    real:{r1rev:'~750.000',  r1sub:'~25 salg × 30.000 kr.',            r1net:'~420.000',
+          r2rev:'~1.500.000',r2sub:'~50 salg × 30.000 kr. · liste ~20.000', r2net:'~1.200.000'},
+    opt: {r1rev:'~1.500.000',r1sub:'~50 salg × 30.000 kr.',            r1net:'~1.170.000',
+          r2rev:'~3.000.000',r2sub:'~100 salg × 30.000 kr. · liste ~20.000',r2net:'~2.700.000'}
   };
-  const roiRev=document.getElementById('roi-rev'),roiRevSub=document.getElementById('roi-rev-sub'),roiNet=document.getElementById('roi-net'),roiNetSub=document.getElementById('roi-net-sub');
+  const KR=' <span style="font-size:20px">kr.</span>';
+  const e=id=>document.getElementById(id);
   document.querySelectorAll('#roiToggle button').forEach(b=>{
     b.addEventListener('click',()=>{
       document.querySelectorAll('#roiToggle button').forEach(x=>x.classList.remove('active'));
       b.classList.add('active');
       const d=roiData[b.dataset.s];
-      roiRev.innerHTML=d.rev+' <span style="font-size:20px">kr.</span>';
-      roiRevSub.textContent=d.revSub;
-      roiNet.innerHTML=d.net+' <span style="font-size:20px">kr.</span>';
-      roiNetSub.textContent=d.netSub;
+      e('r1-rev').innerHTML=d.r1rev+KR; e('r1-revsub').textContent=d.r1sub; e('r1-net').innerHTML=d.r1net+KR;
+      e('r2-rev').innerHTML=d.r2rev+KR; e('r2-revsub').textContent=d.r2sub; e('r2-net').innerHTML=d.r2net+KR;
     });
   });
 
