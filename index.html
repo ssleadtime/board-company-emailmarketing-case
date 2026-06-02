@@ -354,6 +354,38 @@
   .logo-lt{height:30px;width:auto;display:block;}
   .logo-bc{height:25px;width:auto;display:block;}
   .logo-lt-foot{height:23px;width:auto;display:block;}
+
+  /* LinkedIn dropdown-case */
+  .li-drop{margin-top:38px;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow .3s,border-color .3s;}
+  .li-drop.open{box-shadow:var(--shadow);border-color:#cdd9e6;}
+  .li-head{width:100%;border:none;background:transparent;display:flex;align-items:center;gap:16px;padding:22px 26px;cursor:pointer;font-family:inherit;text-align:left;}
+  .li-head:hover{background:rgba(104,124,156,.05);}
+  .li-head .li-ico{flex:none;width:42px;height:42px;border-radius:10px;background:#0A66C2;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .li-head .li-t{font-weight:700;font-size:16.5px;color:var(--ink);flex:1;}
+  .li-head .li-t small{display:block;font-weight:500;font-size:13px;color:var(--muted);margin-top:2px;}
+  .li-head .li-hint{font-size:12.5px;color:var(--coral);font-weight:700;letter-spacing:.04em;white-space:nowrap;}
+  .li-chev{flex:none;width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .3s;margin-left:4px;}
+  .li-drop.open .li-chev{transform:rotate(-135deg);margin-top:5px;}
+  .li-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.2,.7,.2,1);}
+  .li-inner{padding:4px 30px 32px 30px;}
+  .li-lead{font-size:15px;color:#46505f;max-width:740px;margin-bottom:24px;line-height:1.6;}
+  .li-phase{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:22px;}
+  .li-pcard{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--cream);position:relative;overflow:hidden;}
+  .li-pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:#0A66C2;}
+  .li-pcard .pk{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A66C2;margin-bottom:9px;}
+  .li-pcard h4{font-family:'Work Sans',sans-serif;font-size:16px;font-weight:600;color:var(--ink);margin-bottom:7px;}
+  .li-pcard p{font-size:13.5px;color:#56606e;line-height:1.5;}
+  .li-pcard .ex{display:block;margin-top:10px;font-style:italic;color:var(--slate);font-size:13px;}
+  .li-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px;}
+  .li-info{border:1px solid var(--line);border-left:3px solid var(--slate);background:var(--cream-2);border-radius:0 12px 12px 0;padding:18px 22px;}
+  .li-info b{display:block;color:var(--ink);font-size:14.5px;margin-bottom:5px;}
+  .li-info span{font-size:13.5px;color:#56606e;line-height:1.5;}
+  .li-info .num{color:#0A66C2;font-weight:700;}
+  .li-tone{font-size:14px;color:#46505f;line-height:1.6;}
+  .li-tone b{color:var(--ink);}
+  .li-next{margin-top:18px;background:var(--ink);color:#fff;border-radius:14px;padding:18px 22px;font-size:14px;line-height:1.55;}
+  .li-next b{color:var(--gold);}
+  @media(max-width:680px){.li-phase{grid-template-columns:1fr}.li-row{grid-template-columns:1fr}.li-inner{padding:4px 20px 24px 20px}.li-head .li-hint{display:none}}
 </style>
 </head>
 <body>
@@ -368,6 +400,7 @@
     <a href="#beregner">Beregner</a>
     <a href="#scenarier">Scenarier</a>
     <a href="#roi">ROI</a>
+    <a href="#linkedin">LinkedIn</a>
   </div>
 </nav>
 
@@ -673,7 +706,7 @@
       <div class="li-ico">in</div>
       <div>
         <b>Organisk LinkedIn — i en case for sig.</b>
-        <span>LinkedIn vurderes på sit eget afkast, ikke kun som en udgift. Vi laver en selvstændig LinkedIn-case, som vi linker til herfra. <em>Kommer.</em></span>
+        <span>LinkedIn vurderes på sit eget afkast, ikke kun som en udgift. Vi har skitseret muligheden i en <a href="#linkedin" style="color:var(--gold);font-weight:600;text-decoration:none">selvstændig sektion nederst</a> — fold den ud for at se mere.</span>
       </div>
     </div>
 
@@ -766,6 +799,63 @@
     </div>
 
     <p class="g-foot reveal">Tidsplanen er vejledende. De konkrete leverancer og datoer fastlægges sammen med Board Company ved opstart.</p>
+  </div>
+</section>
+
+<!-- ================= LINKEDIN (dropdown-case) ================= -->
+<section id="linkedin" class="alt">
+  <div class="wrap">
+    <div class="sec-tag reveal"><span class="num">07</span> · Bonus</div>
+    <h2 class="sec-title serif reveal">Organisk LinkedIn — en mulighed oveni.</h2>
+    <p class="sec-lead reveal">Når vi alligevel producerer indhold til nyhedsbrev og flows, kan det samme stof give genlyd organisk på LinkedIn — så Board Company møder leadet på to kanaler, og oplevelsen af relevans forstærkes. Fold ud for at se, hvordan vi tænker det.</p>
+
+    <div class="li-drop reveal d1" id="liDrop">
+      <button class="li-head">
+        <span class="li-ico">in</span>
+        <span class="li-t">Sådan kunne en organisk LinkedIn-indsats se ud<small>Indhold I alligevel producerer — sat i system pr. uddannelse og pr. land</small></span>
+        <span class="li-hint">Fold ud →</span>
+        <i class="li-chev"></i>
+      </button>
+      <div class="li-body"><div class="li-inner">
+        <p class="li-lead">Hvert nyhedsbrev og flow rummer vinkler, der også fungerer organisk. I stedet for at producere nyt fra bunden genbruger og tilpasser vi indholdet til LinkedIn. Hver uddannelse får sit eget spor — med en plan for, hvad der postes <b>før, under og efter</b>.</p>
+
+        <div class="li-phase">
+          <div class="li-pcard">
+            <div class="pk">Før</div>
+            <h4>Byg forventning</h4>
+            <p>Dilemmaer og spørgsmål, der rammer beslutningstagere — og skaber spænding op til uddannelsen.</p>
+            <span class="ex">„Jeres største kunde er i medierne for korruption. Hvad gør du?”</span>
+          </div>
+          <div class="li-pcard">
+            <div class="pk">Under</div>
+            <h4>Live mini-reportage</h4>
+            <p>Billeder fra rummet, citater fra undervisere og glimt fra fx The Board Game — eksklusivitet gjort konkret, mens det sker.</p>
+            <span class="ex">„Lige nu taler underviseren om beslutninger under pres…”</span>
+          </div>
+          <div class="li-pcard">
+            <div class="pk">Efter</div>
+            <h4>Outcome &amp; beviser</h4>
+            <p>Hvad deltagerne tager med sig, stemmer fra rummet og et kig ind i netværket — effekt frem for format.</p>
+            <span class="ex">„Skarpere beslutninger. Et stærkere netværk.”</span>
+          </div>
+        </div>
+
+        <div class="li-row">
+          <div class="li-info">
+            <b>Lokalt pr. marked — <span class="num">9 lande</span></b>
+            <span>Board Company er til stede i 9 lande, og organisk LinkedIn er i høj grad lokalt. Vi lægger en plan og kadence pr. land, så indholdet rammer den lokale kontekst og det rette beslutningstager-segment.</span>
+          </div>
+          <div class="li-info">
+            <b>Rapportage fra hver uddannelse</b>
+            <span>Hver gang en uddannelse afvikles, samler vi materiale — billeder og korte citater — der bliver til en lille reportage. Et fast, troværdigt flow af indhold, uden ekstra produktionsbyrde.</span>
+          </div>
+        </div>
+
+        <p class="li-tone"><b>Tonen følger brandet:</b> outcome frem for format, til erfarne beslutningstagere — skarpt, eksklusivt og internationalt. <em style="color:var(--slate);font-style:normal">„Bestyrelsesviden. Globalt udsyn. Eksklusivt netværk.”</em></p>
+
+        <div class="li-next"><b>Næste skridt:</b> Det her er rammen. En fuld LinkedIn-case — med kadence, ressourcer og forventet effekt pr. land — bygger vi som det næste, når email-sporet er sat.</div>
+      </div></div>
+    </div>
   </div>
 </section>
 
@@ -911,7 +1001,20 @@
   window.addEventListener('resize',()=>{
     const open=document.querySelector('.acc-item.open .acc-body');
     if(open)open.style.maxHeight=open.scrollHeight+'px';
+    const lo=document.querySelector('.li-drop.open .li-body');
+    if(lo)lo.style.maxHeight=lo.scrollHeight+'px';
   });
+
+  // ---- LinkedIn dropdown ----
+  const liDrop=document.getElementById('liDrop');
+  if(liDrop){
+    const liHead=liDrop.querySelector('.li-head'), liBody=liDrop.querySelector('.li-body'), liHint=liDrop.querySelector('.li-hint');
+    liHead.addEventListener('click',()=>{
+      const open=liDrop.classList.toggle('open');
+      liBody.style.maxHeight=open?liBody.scrollHeight+'px':null;
+      if(liHint)liHint.textContent=open?'Fold ind':'Fold ud →';
+    });
+  }
 </script>
 </body>
 </html>
