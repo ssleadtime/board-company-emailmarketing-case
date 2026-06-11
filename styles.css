@@ -388,7 +388,7 @@
   /* ===== shared: hub + sub-pages ===== */
   .page-hero{min-height:62vh;display:flex;flex-direction:column;justify-content:center;position:relative;color:#fff;overflow:hidden;background:radial-gradient(120% 120% at 80% 0%,#3C4759 0%,var(--ink) 55%,#182030 100%);padding:120px 0 70px;}
   .page-hero .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:54px 54px;mask-image:radial-gradient(120% 90% at 70% 10%,#000 30%,transparent 80%);}
-  .page-hero .wrap{position:relative;z-index:2;}
+  .page-hero .wrap{position:relative;z-index:2;width:100%;}
   .cobrand-lock{display:flex;align-items:center;gap:18px;margin-bottom:34px;}
   .cobrand-lock img.lt{height:30px}.cobrand-lock img.bc{height:25px}
   .cobrand-lock .x{color:rgba(255,255,255,.4);font-size:14px;}
