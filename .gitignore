@@ -1,4 +1,10 @@
-# Kun præsentationen trackes — kildedokumenter holdes ude (fortroligt kundemateriale)
+# Website-filer der trackes — kildedokumenter (docx/PDF) holdes ude
 *
 !.gitignore
+!styles.css
 !index.html
+!case.html
+!email-projekt.html
+!track-record.html
+!lt-white.png
+!bc-white.png
