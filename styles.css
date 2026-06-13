@@ -499,3 +499,9 @@
   .flowrow-rk{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
   .flowrow-r p{font-size:14.5px;line-height:1.5;color:var(--navy);font-weight:500;}
   @media(max-width:820px){.flowrow{grid-template-columns:1fr;gap:14px}.flowrow-r{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:16px}}
+
+  /* hero 2-column + illustration (forside) */
+  .hero-2col{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;}
+  .hero-art{position:relative;}
+  .hero-art svg{display:block;width:100%;max-width:440px;height:auto;margin-left:auto;}
+  @media(max-width:920px){.hero-2col{grid-template-columns:1fr;gap:0}.hero-art{display:none}}
